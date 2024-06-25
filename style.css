@@ -75,4 +75,4 @@
             .features .list img {width: 102px;height: 102px; object-fit: contain; margin-bottom: 26px;}
             .features .list a {margin-bottom: 16px; display: block;}
             .features .list a:hover h3 {color: #063b3b} 
-            .features .list p {display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient:vertical; overflow: hidden; max-width: 224px;}
+            .features .list p {display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient:vertical; overflow: hidden; max-width: 224px; font-size: 1.6rem;}
