@@ -1,0 +1,26 @@
+/* style.css */
+/* common selectors */
+    .content-margin {max-width: 1170px; width: calc(100% - 36px); margin-left: auto;margin-right: auto;} 
+    .logo {width: 127px;height: 37px; background: url(./assets/img/logo/logo.svg) center center / contain no-repeat; display: inline-flex}
+    .logo:hover {opacity: .8;}
+
+    /* button2 */
+    .button2 {border: 1px solid currentColor; border-radius: 6px; color: #1EBFC1; background: transparent;}
+    .button2:hover {background: #1EBFC1; color: var(--color-3);}
+/* custom selectors */
+    /* header */
+    header {display: flex;align-items: center; position: sticky; padding-top: 34px; top: -34px; background: rgba(255 255 255 / 0.5); backdrop-filter: blur(3px);}
+    header .bar {padding: 18px; display: flex; align-items: center;}
+        /* logo */
+        /* nav-list */
+        .menu-list {margin: 0 auto;}
+        .menu-list ul {display: flex; align-items: center; gap: 19px; }
+        .menu-list ul li a {display: inline-block; padding: 3px 10px; color: #2F3A3B; font-size: 1.6rem;} 
+        .menu-list ul li a::before {content: attr(title); display: block; visibility: hidden; height: 0; font-weight: 600;}
+        .menu-list ul li a:hover {font-weight: 600;}
+        /* cta action */
+        .cta-wrapper {display: flex;align-items: center; gap: 24px;}
+        .cta-wrapper a {display: inline-block; font-weight: 400; font-size: 1.6rem;}
+        .cta-wrapper a.button1::before {display: block;content: attr(title);font-weight: bold;height: 0;overflow: hidden;visibility: hidden;}
+        .cta-wrapper a.button1:hover {font-weight: 600;}
+        .cta-wrapper a.button2 {padding: 12px 24px; }
