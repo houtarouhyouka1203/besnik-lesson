@@ -5,11 +5,21 @@
     .logo:hover {opacity: .8;}
 
     /* button2 */
-    .button2 {border: 1px solid currentColor; border-radius: 6px; color: #1EBFC1; background: transparent;}
-    .button2:hover {background: #1EBFC1; color: var(--color-3);}
+    .button2 {border: 1px solid currentColor; border-radius: 6px; color: var(--color-5); background: transparent;}
+    .button2:hover {background: var(--color-5); color: var(--color-3);}
+    
+    /* button 3 [reversed button2] */
+    .button3 {border: 1px solid currentColor; border-radius: 14px; background: var(--color-5); color: var(--color-3); font-size: 1.8rem;font-weight: 600;}
+    .button3:hover {opacity: 0.7; box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);}
+
+    /* H-text */
+    h1, h2 {color: var(--color-2);}
+    h1 {font-size: 6.2rem;line-height: 1.2; font-weight: 700; }
+    p {line-height: 1.77;}
+    .title {font-size: 1.4rem; margin-bottom: 18px; display: block;}
 /* custom selectors */
     /* header */
-    header {display: flex;align-items: center; position: sticky; padding-top: 34px; top: -34px; background: rgba(255 255 255 / 0.5); backdrop-filter: blur(3px);}
+    header {display: flex;align-items: center; position: sticky; padding-top: 34px; top: -34px; background: rgba(255 255 255 / 0.5); backdrop-filter: blur(3px); z-index: 100;}
     header .bar {padding: 18px; display: flex; align-items: center;}
         /* logo */
         /* nav-list */
@@ -24,3 +34,30 @@
         .cta-wrapper a.button1::before {display: block;content: attr(title);font-weight: bold;height: 0;overflow: hidden;visibility: hidden;}
         .cta-wrapper a.button1:hover {font-weight: 600;}
         .cta-wrapper a.button2 {padding: 12px 24px; }
+    /* Hero container */
+    main .hero {display: flex; height: calc(100vh - 64px); max-height: 860px; }
+    main .hero .wrapper {display: flex;align-items: center; gap: 136px;}
+        /* Hero >> text */
+        .hero .text {width: 40%;max-width: 460px; min-width: 200px;}
+        .hero p {color: #767E7E; margin-top: 46px;margin-bottom: 52px; margin-right: 50px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient:vertical; overflow: hidden;}
+        .hero .cta-wrapper .button3 {padding: 20px 40px;}
+        .hero .cta-wrapper a[action="play"] {width: 62px;height: 62px; border-radius: 50%; box-shadow: 0px 22px 50px 0px rgba(0, 0, 0, 0.05); display: flex;align-items: center;justify-content: center;}
+        .hero .cta-wrapper a[action="play"]:hover {box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);}
+
+        /* Hero >> mixed-images */
+        .hero .mixed-images {width: 50%; margin-left: auto; position: relative; background: url(./assets/img/landing/hero/1.png) center / cover no-repeat; aspect-ratio: 576 / 631;}
+        .hero .mixed-images > .item {position: absolute; box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05); padding: 18px 25px; border-radius: 24px; }
+        .hero .mixed-images > .item span {font-size: 1rem;color: var(--color-2); font-weight: 500; display: block;}
+            .mixed-images #course {left: -40px;top: 149px; border-radius: 18px; background: var(--color-3); display: flex; align-items: center; gap: 16px;}
+                #course img {width: 36px;height: 40px; object-fit: contain; }
+                #course span {width: 55px; }
+            .mixed-images #schedule {bottom: 46px; left: -65px; background: var(--color-3); display: flex; align-items: center; flex-direction: column; padding: 25px;}
+                #schedule img {margin-top: 12px; width: 100%; height: 6px;}
+                #schedule img:last-of-type {width: 26px;}
+                #schedule span {margin-bottom: 4px;}
+            .mixed-images #students {bottom: 40px; right: 45px; background: var(--color-3); display: flex; align-items: center; flex-direction: column; padding: 17px 35px; gap: 8px;}
+                #students span {text-align: left; width: 100%;}
+                #students .student-list {display: flex;}
+                #students .item {background: var(--bg);width: 33px;height: 33px;border-radius: 50%; display: flex; align-items: center; justify-content: center;}
+                .student-list>.item:not(:first-of-type) {margin-left: -7px;}
+                .student-list .num {font-size: 1rem; font-weight: 500;color: var(--color-3); }
