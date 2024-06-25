@@ -17,6 +17,7 @@
     h1 {font-size: 6.2rem;line-height: 1.2; font-weight: 700; }
     p {line-height: 1.77;}
     .title {font-size: 1.4rem; margin-bottom: 18px; display: block;}
+    a { transition: 0.3s;}
 /* custom selectors */
     /* header */
     header {display: flex;align-items: center; position: sticky; padding-top: 34px; top: -34px; background: rgba(255 255 255 / 0.5); backdrop-filter: blur(3px); z-index: 100;}
