@@ -106,9 +106,9 @@
             .countdown .wrapper .item {display: flex; flex-direction: column; gap: 11px; flex-shrink: 0; flex-grow: 1;}
             .countdown .wrapper .item > * {display: block; width: 100%; text-align: center;}
             .countdown .wrapper strong {font-size: 6.2rem;}
-    main .testimonial {display: flex; }
-         .testimonial .wrapper {display: block; position: relative; min-height: 481px;}
-            .testimonial .section {position: absolute; left: 0; top: 0; width: 80%; max-width: 419px; background: linear-gradient(to right, rgba(255 255 255 / 100) 40%, transparent 100%); padding: 37px 0; z-index: 10;}
+    main .testimonial {display: flex; width: 100%;}
+         .testimonial .wrapper {display: flex; align-items: center;}
+            .testimonial .section {width: 80%; max-width: 419px; background: linear-gradient(to right, rgba(255 255 255 / 100) 40%, transparent 100%); padding: 37px 0; z-index: 10;}
                 /* testimonial section >> objects */
                 .testimonial .section > i {width: 36px;height: 29px; background: url(./assets/img/icon/quote.svg); display: block;}
                 .testimonial p.quote {margin-top: 27px;}
@@ -119,6 +119,7 @@
                     .navigation a i {color: var(--color-3);}
                     .navigation a:hover {background: var(--color-3); border-color: var(--color-1);}
                     .navigation a:hover i {color: var(--color-1);}
+            .testimonial .user-list {position: relative; width: 60%; margin-left: auto; display: block; height: 100%;}
             .testimonial .user {position: absolute; border-radius: 50%; background: var(--bg); aspect-ratio: 1 / 1;}
                 .testimonial .user:nth-child(6) { width: 235px; top: 107px; right: 171px;}
                 .testimonial .user:nth-child(2) { width: 78px; top: 258px; right: 601px;}
