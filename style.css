@@ -121,7 +121,7 @@
                     .navigation a:hover i {color: var(--color-1);}
             .testimonial .user-list {position: relative; width: 60%; margin-left: auto; display: block; height: 100%;}
             .testimonial .user {position: absolute; border-radius: 50%; background: var(--bg); aspect-ratio: 1 / 1;}
-                .testimonial .user:nth-child(6) { width: 235px; top: 107px; right: 171px;}
+                .testimonial .user:nth-child(1) { width: 235px; top: 107px; right: 171px;}
                 .testimonial .user:nth-child(2) { width: 78px; top: 258px; right: 601px;}
                 .testimonial .user:nth-child(3) { width: 92px; top: 107px; right: 443px;}
                 .testimonial .user:nth-child(4) { width: 110px; top: 19px; right: 0px;}
