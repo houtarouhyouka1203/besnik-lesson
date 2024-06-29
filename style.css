@@ -14,13 +14,15 @@
 
     /* H-text */
     h1, h2, h3, strong {color: var(--color-2);font-weight: 700;}
-    h1, strong {font-size: 6.2rem;line-height: 1.2;}
+    h1 {font-size: 6.2rem;line-height: 1.2;}
     h2 {font-size: 4.2rem;line-height: 1.3;}
     h3 {font-size: 2.0rem;font-weight: 600;}
 
-    p {line-height: 1.77;}
+    p.quote {color: #5D6564; line-height: 1.5; font-size: 3.2rem; }
     .title {font-size: 1.4rem; margin-bottom: 18px; display: block;}
-    a { transition: 0.3s;}
+    strong {white-space: pre;}
+    a, i { transition: 0.3s;}
+
 /* custom selectors */
     /* header */
     header {display: flex;align-items: center; position: sticky; padding-top: 34px; top: -34px; background: rgba(255 255 255 / 0.5); backdrop-filter: blur(3px); z-index: 100;}
@@ -103,3 +105,23 @@
         main .countdown .wrapper {max-width: 862px; padding: 0 30px; width: calc(100% - 30px * 2); display: flex; align-items: center; gap: 200px; flex-wrap: wrap; margin-left: auto;margin-right: auto; align-content: center;} 
             .countdown .wrapper .item {display: flex; flex-direction: column; gap: 11px; flex-shrink: 0; flex-grow: 1;}
             .countdown .wrapper .item > * {display: block; width: 100%; text-align: center;}
+            .countdown .wrapper strong {font-size: 6.2rem;}
+    main .testimonial {display: flex; }
+         .testimonial .wrapper {display: block; position: relative; min-height: 481px;}
+            .testimonial .section {position: absolute; left: 0; top: 0; width: 80%; max-width: 419px; background: linear-gradient(to right, rgba(255 255 255 / 100) 40%, transparent 100%); padding: 37px 0; z-index: 10;}
+                /* testimonial section >> objects */
+                .testimonial .section > i {width: 36px;height: 29px; background: url(./assets/img/icon/quote.svg); display: block;}
+                .testimonial p.quote {margin-top: 27px;}
+                .testimonial p.author {margin-top: 33px; display: inline-flex; position: relative; width: 200px; align-items: center;margin-left: 13px; }
+                .testimonial p.author::before {content: ''; display: block; width: 8px;height: 2px; background: var(--color-2); position: absolute; left: -13px;}
+                .testimonial .navigation {display: flex; gap: 30px; align-items: center; margin-top: 52px;}
+                    .navigation a {display: flex; align-items: center; justify-content: center; background: var(--color-1);  border-radius: 50%; box-sizing: border-box; border: 1px solid var(--color-1); width: 50px;height: 50px;}
+                    .navigation a i {color: var(--color-3);}
+                    .navigation a:hover {background: var(--color-3); border-color: var(--color-1);}
+                    .navigation a:hover i {color: var(--color-1);}
+            .testimonial .user {position: absolute; border-radius: 50%; background: var(--bg); aspect-ratio: 1 / 1;}
+                .testimonial .user:nth-child(6) { width: 235px; top: 107px; right: 171px;}
+                .testimonial .user:nth-child(2) { width: 78px; top: 258px; right: 601px;}
+                .testimonial .user:nth-child(3) { width: 92px; top: 107px; right: 443px;}
+                .testimonial .user:nth-child(4) { width: 110px; top: 19px; right: 0px;}
+                .testimonial .user:nth-child(5) { width: 78px; bottom: 29px; right: 29px;}
