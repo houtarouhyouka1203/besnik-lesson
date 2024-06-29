@@ -24,6 +24,7 @@
     strong {white-space: pre;}
     a, i { transition: 0.3s;}
 
+    h4 {color: #2e2e2e;font-weight: 500; font-size: 1.8rem;}
 /* custom selectors */
     /* header */
     header {display: flex;align-items: center; position: sticky; padding-top: 34px; top: -34px; background: rgba(255 255 255 / 0.5); backdrop-filter: blur(3px); z-index: 100;}
@@ -83,11 +84,11 @@
     main .courses {display: flex;}
         /* Course1 > Section 1 */
         .courses .section1 {width: 100%;margin-bottom: 80px;}
-                 .section1 h2 {margin: 18px 0;}
-                 .section1 section {width: 100%;display: flex; align-items: center;justify-content: space-between;}
-                 .section1 section p {display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient:vertical; overflow: hidden; line-height: 1.8; width: 50%;max-width: 525px;}
-                 .section1 section a {color: var(--color-5); text-decoration: underline; transition: .3s;}
-                 .section1 section a:hover {color: var(--color-4);}
+        .courses .section1 h2 {margin: 18px 0;}
+        .courses .section1 section {width: 100%;display: flex; align-items: center;justify-content: space-between;}
+        .courses .section1 section p {display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient:vertical; overflow: hidden; line-height: 1.8; width: 50%;max-width: 525px;}
+        .courses .section1 section a {color: var(--color-5); text-decoration: underline; transition: .3s;}
+        .courses .section1 section a:hover {color: var(--color-4);}
         /* Course1 > Section 2 */
         .courses .section2 {display: flex;align-items: center; gap: 46px; justify-content: center; flex-wrap: wrap;}
         .courses .section2 .item {width: 359px;height: 517px; position: relative; flex-shrink: 0;}
@@ -102,11 +103,13 @@
                     data .class-info {display: flex; gap: 10px; align-items: center;}
                         .class-info span { display: flex; align-items: center;gap: 10px;}
                         .class-info span::before {content: ''; display: block; width: 6px;height: 6px;border-radius: 50%; background: var(--color-5);}
+    /* countdown container */
     main .countdown {padding: 265px 0; display: flex;}
         main .countdown .wrapper {max-width: 862px; padding: 0 30px; width: calc(100% - 30px * 2); display: flex; align-items: center; gap: 200px; flex-wrap: wrap; margin-left: auto;margin-right: auto; align-content: center;} 
             .countdown .wrapper .item {display: flex; flex-direction: column; gap: 11px; flex-shrink: 0; flex-grow: 1;}
             .countdown .wrapper .item > * {display: block; width: 100%; text-align: center;}
             .countdown .wrapper strong {font-size: 6.2rem;}
+    /* testimonial container */
     main .testimonial {display: flex; width: 100%;}
          .testimonial .wrapper {display: flex; align-items: center;}
             .testimonial .section {width: 80%; max-width: 419px; background: linear-gradient(to right, rgba(255 255 255 / 100) 40%, transparent 100%); padding: 37px 0; z-index: 10;}
@@ -127,8 +130,26 @@
                 .testimonial .user:nth-child(3) { width: 92px; top: 107px; right: 443px;}
                 .testimonial .user:nth-child(4) { width: 110px; top: 19px; right: 0px;}
                 .testimonial .user:nth-child(5) { width: 78px; bottom: 29px; right: 29px;}
+    /* Call-to-action container real */
     main .cta-elearning {background:#DEF6F5; padding: 76px 0; display: flex;}
-    .cta-elearning .wrapper {display: flex; align-items: center; justify-content: space-between;}
-    .cta-elearning .wrapper > * {flex-shrink: 0;}
-    .cta-elearning .wrapper p {font-size:  1.8rem; margin-top: 18px;}
-    .cta-elearning .wrapper .cta {padding: 20px 40px;}
+        .cta-elearning .wrapper {display: flex; align-items: center; justify-content: space-between;}
+        .cta-elearning .wrapper > * {flex-shrink: 0;}
+        .cta-elearning .wrapper p {font-size:  1.8rem; margin-top: 18px;}
+        .cta-elearning .wrapper .cta {padding: 20px 40px;}
+    /* Footer  */
+    footer {padding-top: 130px;}
+        /* Footer > section1 */
+        footer section.section1 {display: flex;align-items: flex-start; width: 100%; margin-bottom: 80px;}
+            /* Footer > logo brands */
+            /* Footer > sitemap */
+            .sitemap {margin-left: auto; display: flex; gap: 144px; }
+                .sitemap > * {display: block;flex-shrink: 0; }
+                section .sitemap h4 {margin-bottom: 25px;}
+                section .sitemap ul {display: flex; flex-direction: column; gap: 20px;}
+                section .sitemap li {display: flex; gap: 9px; align-items: center;}
+                section .sitemap li a {font-size: 1.6rem;color: #535353;}
+                section .sitemap li a::before {content: attr(title); display: block; height: 0; visibility: hidden; font-weight: 700;}
+                section .sitemap li a:hover {font-weight: 700;}
+        footer section.section2 {display: flex;align-items: center; width: 100%; gap: 144px;}
+        /* footer p copyright */
+        footer p {margin-bottom: 50px; text-align: center;width: 100%; color: #B0B5B4;}
