@@ -76,3 +76,26 @@
             .features .list a {margin-bottom: 16px; display: block;}
             .features .list a:hover h3 {color: #063b3b} 
             .features .list p {display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient:vertical; overflow: hidden; max-width: 224px; font-size: 1.6rem;}
+    /* Courses container */ 
+    main .courses {display: flex;}
+        /* Course1 > Section 1 */
+        .courses .section1 {width: 100%;margin-bottom: 80px;}
+                 .section1 h2 {margin: 18px 0;}
+                 .section1 section {width: 100%;display: flex; align-items: center;justify-content: space-between;}
+                 .section1 section p {display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient:vertical; overflow: hidden; line-height: 1.8; width: 50%;max-width: 525px;}
+                 .section1 section a {color: var(--color-5); text-decoration: underline; transition: .3s;}
+                 .section1 section a:hover {color: var(--color-4);}
+        /* Course1 > Section 2 */
+        .courses .section2 {display: flex;align-items: center; gap: 46px; justify-content: center; flex-wrap: wrap;}
+        .courses .section2 .item {width: 359px;height: 517px; position: relative; flex-shrink: 0;}
+                 .courses .section2 img{width: 100%;height: 393px; object-fit: cover; padding: auto;top: 0;left: 0; position: absolute;border-radius: 8px; cursor: pointer;}
+                 .courses .section2 img:hover {filter: brightness(.8);}
+                 .courses .section2 data{position: absolute; bottom: 0; background: var(--color-3); border-radius: 8px; box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05); margin: 0 17px; padding: 18px 25px 30px;width: calc(100% - 17px * 2); box-sizing: border-box;}
+                    /* .. > data */
+                    data h3, data strong {font-size: 2.2rem; color: var(--color-2);}
+                    data h3 {margin-bottom: 16px;}
+                    data a:hover h3 {color: var(--color-4);}
+                    data p {margin: 6px 0 18px; font-size: 1.4rem; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient:vertical; overflow: hidden;}
+                    data .class-info {display: flex; gap: 10px; align-items: center;}
+                        .class-info span { display: flex; align-items: center;gap: 10px;}
+                        .class-info span::before {content: ''; display: block; width: 6px;height: 6px;border-radius: 50%; background: var(--color-5);}
