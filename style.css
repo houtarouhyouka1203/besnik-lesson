@@ -32,7 +32,7 @@
     .scroll__item--max, .scroll a:hover {flex-grow: 1;}
 /* custom selectors */
     /* header */
-    header {display: flex;align-items: center; position: sticky; padding-top: 34px; top: -34px; background: rgba(255 255 255 / 0.75); backdrop-filter: blur(15px); z-index: 100;}
+    header {display: flex;align-items: center; position: sticky; padding-top: 34px; top: -34px; background: rgba(255 255 255 / 0.75); backdrop-filter: blur(15px);-webkit-backdrop-filter: blur(15px); z-index: 100;}
     header .bar {padding: 18px; display: flex; align-items: center;}
         /* logo */
         /* nav-list */
@@ -169,12 +169,12 @@
     footer {padding-top: 70px;}
     footer .section1 {flex-direction: column; gap: 45px;}
     footer .logo {flex-shrink: 0;}
-    footer .sitemap {flex-wrap: wrap; gap: 120px; justify-content: flex-start; margin-left: 0; margin-left: 35px; margin-right: 35px; margin: 0 auto; width: calc(100% - 70px);}
-    footer .logo {margin-left: 35px; margin-right: 35px; }
+    footer .sitemap {flex-wrap: wrap; gap: 120px; justify-content: flex-start; margin-left: 0; margin: 0 auto; width: 100%}
+    
 }
 @media all and (max-width: 1050px)  {
     /* hero container */
-    main .hero {height: 850px;}
+    main .hero {height: 650px;}
     main .hero .wrapper {position: relative;}
          .hero .wrapper > * {width: 100%; position: absolute; bottom: 0; max-width: unset;}
             .hero .wrapper .mixed-images {height: calc(100% - 80px); aspect-ratio: unset; bottom: 100px;}
