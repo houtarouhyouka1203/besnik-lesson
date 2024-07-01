@@ -229,4 +229,9 @@
         .mixed-images .item#schedule {visibility: hidden;}
         .mixed-images .item#students {visibility: hidden;}
     main .hero .cta-wrapper  {flex-wrap: wrap;}
+    /* Courses */
+    .courses .section2 {height: 340px;}
+        .courses .section2 .item {width: 90%; height: 303px;}
+        .courses .section2 .item img {height: 200px;}
+    data .class-info {flex-wrap: wrap;}
 }
